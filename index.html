@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Board of Mills Legal</title>
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --paper: #fffdf8;
+      --ink: #1f2430;
+      --muted: #5b6475;
+      --brand: #0c6b58;
+      --line: #e4ddcf;
+      --accent: #c07a2d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, #f9f1de 0%, rgba(249, 241, 222, 0) 40%),
+        radial-gradient(circle at 90% 100%, #e7f1ec 0%, rgba(231, 241, 236, 0) 35%),
+        var(--bg);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f5c4f, #19463f);
+      color: #f8f7f3;
+      border-radius: 14px;
+      padding: 26px 20px;
+      box-shadow: 0 12px 24px rgba(12, 30, 27, 0.16);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      margin: 0 0 6px;
+      font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+      letter-spacing: 0.2px;
+    }
+
+    .hero p {
+      margin: 0;
+      opacity: 0.92;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 14px 0 20px;
+    }
+
+    .tabs a {
+      text-decoration: none;
+      color: #17342f;
+      border: 1px solid #cdd9d2;
+      background: #eef6f2;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.95rem;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+
+    .tabs a:hover {
+      transform: translateY(-1px);
+      background: #e1efe9;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px 20px;
+      box-shadow: 0 8px 18px rgba(35, 44, 60, 0.06);
+      margin-bottom: 16px;
+      animation: fadeUp 360ms ease both;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #1a3f37;
+      font-size: 1.45rem;
+    }
+
+    .card h3 {
+      margin-top: 22px;
+      margin-bottom: 8px;
+      color: #214b42;
+      font-size: 1.06rem;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-style: italic;
+      margin-top: -4px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .note {
+      border-left: 4px solid var(--accent);
+      padding: 10px 12px;
+      background: #fff6ea;
+      color: #5f3a11;
+      border-radius: 6px;
+      margin: 14px 0;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding: 8px 2px;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 22px 16px;
+      }
+
+      .card {
+        padding: 20px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Board of Mills Legal Center</h1>
+      <p>Privacy Policy and Terms and Conditions for Board of Mills by Mantrika Games.</p>
+    </section>
+
+    <nav class="tabs" aria-label="Legal sections">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms and Conditions</a>
+    </nav>
+
+    <section id="privacy" class="card">
+      <h2>Privacy Policy</h2>
+      <p class="meta">Last updated: 2026-04-05</p>
+      <p>This Privacy Policy describes how Mantrika Games collects, uses, and shares information when you use Board of Mills.</p>
+
+      <h3>Information We Collect</h3>
+      <ul>
+        <li>Account data: email and profile information provided when signing in with Firebase Authentication.</li>
+        <li>Gameplay data: match stats, points, wins/losses, token balance, and progression data.</li>
+        <li>Device and diagnostics data: crash and performance information.</li>
+        <li>Advertising identifiers and ad interaction data when rewarded ads are shown via AdMob.</li>
+      </ul>
+
+      <h3>How We Use Information</h3>
+      <ul>
+        <li>Provide login and account features.</li>
+        <li>Save and sync game stats across devices for signed-in users.</li>
+        <li>Operate in-game economy features such as tokens and rewarded hints.</li>
+        <li>Improve app stability and user experience.</li>
+        <li>Serve and measure ads where applicable.</li>
+      </ul>
+
+      <h3>Third-Party Services</h3>
+      <ul>
+        <li>Google Firebase (Authentication, Firestore, Analytics, Crash reporting).</li>
+        <li>Google AdMob (ads and rewarded ads).</li>
+      </ul>
+
+      <h3>Data Retention and Sharing</h3>
+      <ul>
+        <li>Signed-in account and gameplay data are retained while your account remains active.</li>
+        <li>Diagnostic and analytics data may follow Google service retention policies.</li>
+        <li>We do not sell personal data.</li>
+      </ul>
+
+      <h3>Your Choices</h3>
+      <ul>
+        <li>Guest mode is available with limited online features.</li>
+        <li>You can sign out at any time.</li>
+        <li>You can request account or data deletion by contacting us.</li>
+      </ul>
+
+      <h3>Children</h3>
+      <p>This app is not directed to children under the age required by applicable law in your region without parental consent.</p>
+
+      <h3>Contact</h3>
+      <p>Email: support@mantrikagames.com</p>
+    </section>
+
+    <section id="terms" class="card">
+      <h2>Terms and Conditions</h2>
+      <p class="meta">Last updated: 2026-04-05</p>
+      <p>These Terms and Conditions govern your use of Board of Mills provided by Mantrika Games. By downloading, installing, or using the app, you agree to these Terms.</p>
+
+      <h3>Eligibility and Acceptance</h3>
+      <ul>
+        <li>You must comply with applicable laws in your region when using the app.</li>
+        <li>If you do not agree with these Terms, do not use the app.</li>
+      </ul>
+
+      <h3>Accounts</h3>
+      <ul>
+        <li>Some features require sign-in using Firebase Authentication.</li>
+        <li>You are responsible for your account credentials and usage.</li>
+      </ul>
+
+      <h3>In-App Economy and Virtual Items</h3>
+      <ul>
+        <li>The app may include virtual tokens and unlocks.</li>
+        <li>Virtual items have no real-world monetary value and are non-transferable.</li>
+        <li>We may rebalance token costs, rewards, and progression.</li>
+      </ul>
+
+      <h3>Ads and Rewards</h3>
+      <ul>
+        <li>The app may display ads, including rewarded ads.</li>
+        <li>Reward availability can vary by region, device, and network conditions.</li>
+        <li>Limits, cooldowns, or anti-abuse controls may apply.</li>
+      </ul>
+
+      <h3>Acceptable Use</h3>
+      <ul>
+        <li>Do not tamper with or exploit the app.</li>
+        <li>Do not bypass monetization, reward, or account protections.</li>
+        <li>Do not use bots, scripts, or unauthorized tools.</li>
+      </ul>
+
+      <h3>Intellectual Property</h3>
+      <p>The app, game assets, branding, and code are owned by Mantrika Games or licensors. You are granted a limited, non-exclusive, non-transferable license for personal use.</p>
+
+      <h3>Service Changes and Availability</h3>
+      <p>We may modify, suspend, or discontinue features at any time and do not guarantee uninterrupted service.</p>
+
+      <h3>Disclaimers and Liability</h3>
+      <p>The app is provided as is and as available. To the fullest extent permitted by law, we disclaim implied warranties and limit liability for indirect and consequential damages.</p>
+
+      <h3>Termination</h3>
+      <p>We may suspend or terminate access for violations of these Terms or misuse of the app.</p>
+
+      <h3>Governing Law</h3>
+      <p>These Terms are governed by the laws applicable to your operating entity jurisdiction.</p>
+
+      <h3>Contact</h3>
+      <p>Email: support@mantrikagames.com</p>
+      <div class="note">Before publishing, confirm final legal entity details, governing law text, and contact email.</div>
+    </section>
+
+    <footer>
+      <p>Mantrika Games • Board of Mills Legal Center</p>
+    </footer>
+  </main>
+</body>
+</html>
